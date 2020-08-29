@@ -1,0 +1,95 @@
+body {
+    background: #2C3E50;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4CA1AF, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4CA1AF, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+#container {
+    background: #f7f7f7;
+    width: 400px;
+    margin: 200px auto;
+    box-shadow: 1px 1px 50px 2.5px #2C3E50;
+}
+
+li {
+    height: 50px;   /* I want the height of each li element 40px */
+    line-height: 50px;  /* Centralizes the text in these 40px high lis */
+    color: #666; 
+}
+
+li:nth-child(2n) {
+    background: white;
+}
+
+h1 {
+    background-color: #4CA1AF;
+    margin: 0;
+    color: white;
+    padding: 10px 20px;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+input[type="text"] {
+    width: 100%;
+    box-sizing: border-box; /* includes the padding in width */
+    border: none;
+    font-size: 18px;
+    padding: 14px 14px 14px 20px;
+    line-height: 2;
+    background: #f7f7f7;
+    border: 3px solid rgba(0,0,0,0); /* used to perfectly align the input border with ul border */
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #4CA1AF;  
+    color: #4CA1AF;
+    font-weight: 300;
+    background: white;
+}
+
+span {
+    background-color: rgb(221, 221, 221);
+    display: inline-block;
+    width: 0;
+    height: 50px;
+    text-align: center;
+    color: red;
+    margin-right: 20px;
+    font-size: 20px;
+    transition: 0.2s;
+    opacity: 0.0;
+}
+
+li:hover span {
+    opacity: 1.0;
+    width: 40px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+
+}
+
+.fa-angle-double-up {
+    float: right;
+    padding-top: 4px;
+}
+
+.fa-angle-double-down {
+    float: right;
+    padding-top: 4px;
+}
+
+
+.done {
+    color: gray;
+    text-decoration: line-through;
+    transition: all 0.5s;
+}
